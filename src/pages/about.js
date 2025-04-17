@@ -1,6 +1,5 @@
 import leaves from "../img/leaves.png";
 import contact from "../img/chat.png";
-import star from "../img/star.png";
 
 
 export default function about() {
@@ -33,74 +32,6 @@ export default function about() {
                 {content: "Inquiries: tea@cafebasingse.com"},
                 {content: "Phone: (888) 88E-ARTH"}
             ]
-        },
-        {
-            class: "attributions",
-            header: "Icon Attributions",
-            imgSrc: star,
-            items: [
-                {
-                    href: "https://www.flaticon.com/free-icons/sweets",
-                    title: "sweets icons",
-                    innerHTML: "Sweets icons created by Paul J. - Flaticon"
-                },
-                {
-                    href: "https://www.flaticon.com/free-icons/sushi",
-                    title: "sushi icons",
-                    innerHTML: "Sushi icons created by Flat Icons - Flaticon"
-                },
-                {
-                    href: "https://www.flaticon.com/free-icons/christmas",
-                    title: "christmas icons",
-                    innerHTML: "Christmas icons created by Abbasi - Flaticon"
-                }, 
-                {
-                    href: "https://www.flaticon.com/free-icons/juice",
-                    title: "juice icons",
-                    innerHTML: "Juice icons created by Smashicons - Flaticon"
-                },
-                {
-                    href: "https://www.flaticon.com/free-icons/coffee-cup", 
-                    title: "coffee cup icons",
-                    innerHTML: "Coffee cup icons created by Freepik - Flaticon"
-                },
-                {
-                    href: "https://www.flaticon.com/free-icons/mooncake",
-                    title: "mooncake icons",
-                    innerHTML: "Mooncake icons created by Freepik - Flaticon"
-                },
-                {
-                    href: "https://www.flaticon.com/free-icons/mapo-tofu",
-                    title: "mapo tofu icons",
-                    innerHTML: "Mapo tofu icons created by Freepik - Flaticon"
-                },
-                {
-                    href: "https://www.flaticon.com/free-icons/cookies",
-                    title: "cookie icons",
-                    innerHTML: "Cookies icons created by ultimatearm - Flaticon"
-                },
-                {
-                    href: "https://www.flaticon.com/free-icons/leaves",
-                    title: "leaves icons",
-                    innerHTML: "Leaves icons created by Prosymbols Premium - Flaticon"
-                },
-                {
-                    href: "https://www.flaticon.com/free-icons/cookies",
-                    title: "cookies icons",
-                    innerHTML: "Dumpling icons created by BZZRINCANTATION - Flaticon"
-                },
-                {
-                    href: "https://www.flaticon.com/free-icons/contact",
-                    title: "contact icons",
-                    innerHTML: "Contact icons created by Prashanth Rapolu 15 - Flaticon"
-                },
-                {
-                    href: "https://dribbble.com/dariusdan?ref=svgrepo.com",
-                    tile: "home tea icon",
-                    innerHTML: "Vectors and icons by Darius Dan in CC Attribution License via SVG Repo "
-                }
-                
-            ]
         }
     ];
 
@@ -117,32 +48,13 @@ export default function about() {
         icon.src = section.imgSrc;
         sectionDiv.appendChild(icon);
 
-        if (index === 0 || index === 1) {
-            section.items.forEach(item => {
-                const element = document.createElement("p");
-                element.textContent = item.content;
-                sectionDiv.appendChild(element);
-            })
-        }
-
-        if (index === 2) {
-            const list = document.createElement("ul");
-
-            section.items.forEach(item => {
-                
-                const listItem = document.createElement("li");
-                const attribution = document.createElement("a");
-
-                attribution.href = item.href;
-                attribution.title = item.title;
-                attribution.textContent = item.innerHTML;
-
-                listItem.appendChild(attribution);
-                list.appendChild(listItem);
-                
-            })
-            sectionDiv.appendChild(list);
-        }
+        
+        section.items.forEach(item => {
+            const element = document.createElement("p");
+            element.textContent = item.content;
+            sectionDiv.appendChild(element);
+        
+        });
         aboutContainer.appendChild(sectionDiv);
     });
     container.appendChild(aboutContainer);
