@@ -95,6 +95,7 @@ h1 {
     height: 40px;
     width: 60px;
     background-color: transparent;
+    color: inherit;
 }
 
 .buttons button:hover {
