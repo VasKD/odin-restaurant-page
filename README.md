@@ -1,7 +1,7 @@
 # Cafe Ba Sing Se
 
 ## Description ℹ️
-An Avatar the Last Airbender inspired restaurant page developed using HTML, Vanilla CSS, JavaScript, and the Webpack bundler. This website includes three pages: home, menu, about. Each of whch can be accessed using the corresponding buttons in the nav bar.
+An Avatar the Last Airbender inspired restaurant page developed using HTML, Vanilla CSS, JavaScript, and the Webpack bundler. This website includes three pages: home, menu, about. Each of which can be accessed using the corresponding buttons in the nav bar.
 
 ![image](https://github.com/user-attachments/assets/1c2bb904-de64-4633-8b4c-a375274fc0bf)
 
